@@ -1,0 +1,167 @@
+* {
+  box-sizing: border-box;
+  margin: auto;
+  padding: 0;
+}
+.page-container {
+  width: 30vw;
+  height: 100vh;
+}
+
+.game-grid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: stretch;
+  margin-top: 0;
+  width: 100%;
+  height: 90%;
+  border: 1px solid black;
+  background: lightblue;
+}
+
+.card {
+  width: 22%;
+  height: 25%;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.card-a {
+  background: url("../img/apple.png") no-repeat center center/cover;
+  padding: 10px;
+}
+.card-b {
+  background: url("../img/lemon.png") no-repeat center center/cover;
+  padding: 10px;
+}
+.card-c {
+  background: url("../img/pears.png") no-repeat center center/cover;
+  padding: 10px;
+}
+.card-d {
+  background: url("../img/pineapple.png") no-repeat center center/cover;
+  padding: 10px;
+}
+.card-e {
+  background: url("../img/strawberry.png") no-repeat center center/cover;
+  padding: 10px;
+}
+.card-f {
+  background: url("../img/watermelon.png") no-repeat center center/cover;
+  padding: 10px;
+}
+
+.game-panel {
+  text-align: center;
+  display: flex;
+  width: 100%;
+  height: 10vh;
+  background: black;
+  font-size: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.timer {
+  height: 100%;
+  width: 100%;
+  border: 1px solid black;
+  color: white;
+  border-right: 1px solid grey;
+}
+.success {
+  height: 100%;
+  width: 100%;
+  border: 1px solid black;
+  color: green;
+  border-right: 1px solid grey;
+}
+.failure {
+  height: 100%;
+  width: 100%;
+  border: 1px solid black;
+  color: red;
+}
+
+.flipped {
+  background: url("../img/star.png") no-repeat center center/cover;
+}
+
+.hidden {
+  display: none;
+}
+
+#cover {
+  position: absolute;
+  width: 30vw;
+  height: 100vh;
+  opacity: 90%;
+  left: 35vw;
+  background: grey;
+  border: 1px solid black;
+}
+
+#message {
+  font-size: 50px;
+  text-align: center;
+  margin-top: 40vh;
+  font-size: 100px;
+}
+
+#play {
+  width: 150px;
+  height: 50px;
+  font-size: 25px;
+  margin-left: 11vw;
+  margin-top: 30px;
+  border-radius: 10px;
+}
+
+.blue {
+  color: blue;
+}
+.red {
+  color: red;
+}
+.green {
+  color: darkgreen;
+}
+
+@media screen and (max-width: 599px) {
+  .page-container {
+    width: 100vw;
+  }
+
+  #cover {
+    width: 100vw;
+    left: 0;
+  }
+
+  #play {
+    margin-left: 30vw;
+  }
+
+  .game-panel {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+  .page-container {
+    width: 100vw;
+  }
+
+  #cover {
+    width: 100vw;
+    left: 0;
+  }
+
+  #play {
+    margin-left: 40vw;
+  }
+
+  .game-panel {
+    font-size: 30px;
+    padding-top: 0;
+  }
+}
