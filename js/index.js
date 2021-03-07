@@ -169,9 +169,10 @@ function startOverlay() {
   play.classList.remove("hidden");
 }
 //! load------------------------------------------------------
-startOverlay();
+
 initCards();
 initTimer();
+startOverlay();
 //!Event listeners--------------------------------------------
 
 let success = document.querySelector(".success");
